@@ -1,24 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bima Maarschal</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/scribbler-global.css">
-    <link rel="stylesheet" href="css/scribbler-doc.css">
-    <link rel="author" href="humans.txt">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/scribbler-global.css" />
+    <link rel="stylesheet" href="css/scribbler-doc.css" />
+    <link rel="author" href="humans.txt" />
   </head>
   <body>
     <div class="doc__bg"></div>
     <nav class="header">
-      <h1 class="logo">Bima Maarschal <span class="logo__thin">Dokumentasi</span></h1>
+      <h1 class="logo">
+        Dokumentasi<br /><span class="logo__thin">A-Frame</span>
+      </h1>
       <ul class="menu">
         <div class="menu__item toggle"><span></span></div>
-        <li class="menu__item"><a href="https://github.com/Bimamaarschal" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
-        <li class="menu__item"><a href="index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+        <li class="menu__item">
+          <a
+            href="https://github.com/Bimamaarschal/AR.js-examples-master"
+            class="link link--dark"
+            target="_blank"
+            ><i class="fa fa-github"></i> Github</a
+          >
+        </li>
+        <li class="menu__item">
+          <a href="index.html" class="link link--dark"
+            ><i class="fa fa-home"></i> Home</a
+          >
+        </li>
       </ul>
     </nav>
     <div class="wrapper">
@@ -33,112 +52,135 @@
       <article class="doc__content">
         <section class="js-section">
           <h3 class="section__title">A-Frame menampilkan basic</h3>
-          <p>Tampilkan website</p>  
-          <a href="bumi.html" class="button--primary">Tampilkan</a>
+          <p>Tampilkan website</p>
+          <a href="bumi.html" class="button--primary" target="_blank"
+            >Tampilkan</a
+          >&nbsp;
+          <a href="page/bumi.zip" class="button--primary" download
+            >Donwload Html</a
+          >
           <h3 class="section__title">Kode</h3>
           <div class="code__block code__block--notabs">
             <pre class="code code--block">
               <code>
-                a-scene embedded arjs='sourceType: webcam;'
-
-                    a-entity
-
-                            rotation="-90 0 0"
-                            geometry="primitive: plane; width: 4; height: auto"
-                            material="color: blue"
-                            text="value: Bumi \n Menampilkan gambar bumi dasar" 
-                    /a-entity
-
-                            a-image src="images/earth-flat.jpg" 
-                            rotation="-90 0 0" /a-image
-
-                    a-marker-camera preset='hiro' /a-marker-camera
-
-                /a-scene
+                &lt;body style=&quot;margin: 0px; overflow: hidden&quot;&gt;
+                &lt;a-scene embedded arjs=&quot;sourceType: webcam;&quot;&gt;
+                  &lt;a-entity
+                    rotation=&quot;-90 0 0&quot;
+                    geometry=&quot;primitive: plane; width: 4; height: auto&quot;
+                    material=&quot;color: blue&quot;
+                    text=&quot;value: Bumi \n Menampilkan gambar bumi dasar&quot;
+                  &gt;&lt;/a-entity
+                  &gt;&lt;a-image src=&quot;images/earth-flat.jpg&quot; rotation=&quot;-90 0 0&quot;&gt;&lt;/a-image&gt;
+                  &lt;a-marker-camera preset=&quot;hiro&quot;&gt;&lt;/a-marker-camera&gt;
+                &lt;/a-scene&gt;
+              &lt;/body&gt;
               </code>
             </pre>
           </div>
         </section>
         <section class="js-section">
-          <h3 class="section__title">A-Frame 3D </h3>
-          <p>Tampilkan website</p>   
-            <a href="tam3d.html" class="button--primary">Tampilkan</a>
-            <h3 class="section__title">Code</h3>
-            <div class="code__block code__block--notabs">
-              <pre class="code code--block">
+          <h3 class="section__title">A-Frame 3D</h3>
+          <p>Tampilkan website</p>
+          <a href="tam3d.html" class="button--primary" target="_blank"
+            >Tampilkan</a
+          >&nbsp;
+          <a href="page/tam3d.zip" class="button--primary" download
+            >Donwload Html</a
+          >
+          <h3 class="section__title">Code</h3>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
                 <code>
-                    a-scene embedded arjs='sourceType: webcam;'
-
-                        a-marker-camera preset='hiro'
-
-                            a-entity 
-                            position="0 0 0" scale="0.2 0.2 0.2" gltf-model="https://cdn.glitch.com/0f662680-b46a-4a86-bc3e-660c29752c5a%2FMosque.gltf?v=1611234341037"
-                            /a-entity
-
-                        /a-marker-camera
-
-                    /a-scene
+                  &lt;body style=&quot;margin: 0px; overflow: hidden&quot;&gt;
+                  &lt;a-scene embedded arjs=&quot;sourceType: webcam;&quot;&gt;
+                    &lt;a-marker-camera preset=&quot;hiro&quot;&gt;
+                      &lt;a-entity
+                        position=&quot;0 0 0&quot;
+                        scale=&quot;0.2 0.2 0.2&quot;
+                        gltf-model=&quot;https://cdn.glitch.com/0f662680-b46a-4a86-bc3e-660c29752c5a%2FMosque.gltf?v=1611234341037&quot;
+                      &gt;&lt;/a-entity&gt;
+                    &lt;/a-marker-camera&gt;
+                  &lt;/a-scene&gt;
+                &lt;/body&gt;
                 </code>
               </pre>
-            </div>
+          </div>
         </section>
         <section class="js-section">
           <h3 class="section__title">A-Frame Bola 2D</h3>
-          <p>Tampilkan website</p>   
-            <a href="bola2d.html" class="button--primary">Tampilkan</a>
-            <h3 class="section__title">Code</h3>
-            <div class="code__block code__block--notabs">
-              <pre class="code code--block">
+          <p>Tampilkan website</p>
+          <a href="bola2d.html" class="button--primary" target="_blank"
+            >Tampilkan</a
+          >&nbsp;
+          <a href="page/bola2d.zip" class="button--primary" download
+            >Donwload Html</a
+          >
+          <h3 class="section__title">Code</h3>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
                 <code>
-                    a-scene embedded arjs
-
-                        a-marker preset="hiro"
-
-                        a-sphere position="0 0 0" radius="0.6" color="#EF2D5E" /a-sphere
-
-                        /a-marker
-
-                        a-entity camera /a-entity
-                    
-                        /a-scene
-  
-  
+                  &lt;body style=&quot;margin: 0px; overflow: hidden&quot;&gt;
+                  &lt;a-scene embedded arjs&gt;
+                    &lt;a-marker preset=&quot;hiro&quot;&gt;
+                      &lt;a-sphere position=&quot;0 0 0&quot; radius=&quot;0.6&quot; color=&quot;#EF2D5E&quot;&gt;&lt;/a-sphere&gt;
+                    &lt;/a-marker&gt;
+                    &lt;a-entity camera&gt;&lt;/a-entity&gt;
+                  &lt;/a-scene&gt;
+                &lt;/body&gt;
                 </code>
               </pre>
-            </div>
+          </div>
         </section>
         <section class="js-section">
           <h3 class="section__title">Issues</h3>
-          <p>Agar objek dapat tampil gunakanankan Present Hero dan Present Kanji dari A-Frame</p>
-            <table id="customers">
-                <tr>
-                  <th>Present</th>
-                  <th>Value</th>
-                  <th>Link</th>
-                </tr>
-                <tr>
-                  <td>Hiro</td>
-                  <td>Present Hiro di buat default oleh A-Frame untuk menampilkan objek hasil dari AR</td>
-                  <td><a href="hero.html" >
-                        Donwload
-                  </a></td>
-                </tr>
-                <tr>
-                    <td>Kanji</td>
-                    <td>Present Kanji di buat default oleh A-Frame untuk menampilkan objek hasil dari AR</td>
-                    <td><a href="kanji.html" >
-                          Donwload
-                    </a></td>
-                  </tr>
-              </table>
-          <p>Dokumentasi yang diawali karena tugas kuliah ini akan selalu update sesuai perkembanagn A-Frame AR.Js. Terima kasih :)</p>
+          <p>
+            Agar objek gambar dapat tampil, gunakan Present Hero dan Present
+            Kanji default dari A-Frame
+          </p>
+          <table id="customers">
+            <tr>
+              <th>Present</th>
+              <th>Value</th>
+              <th>Link</th>
+            </tr>
+            <tr>
+              <td>Hiro</td>
+              <td>
+                Present Hiro di buat default oleh A-Frame untuk menampilkan
+                objek hasil dari AR
+              </td>
+              <td><a href="page/hero.zip" download> Donwload </a></td>
+            </tr>
+            <tr>
+              <td>Kanji</td>
+              <td>
+                Present Kanji di buat default oleh A-Frame untuk menampilkan
+                objek hasil dari AR
+              </td>
+              <td><a href="page/kanji.zip" download> Donwload </a></td>
+            </tr>
+          </table>
+          <p>
+            Dokumentasi yang diawali karena tugas kuliah ini akan selalu update
+            sesuai perkembanagn A-Frame AR.Js. Terima kasih :)
+          </p>
         </section>
       </article>
     </div>
 
-    <footer class="footer">Bima Maarschal - 2023</footer>
+    <footer class="footer">
+      Dibuat oleh Bima Maarschal ©
+
+      <script type="text/javascript">
+        var creditsyear = new Date();
+        document.write(creditsyear.getFullYear());
+      </script>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
     <script src="js/scribbler.js"></script>
   </body>
 </html>

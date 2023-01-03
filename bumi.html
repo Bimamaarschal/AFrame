@@ -1,20 +1,19 @@
-
-<!doctype HTML>
+<!DOCTYPE html>
 <html>
-    <head>
-        <script src="js/aframe.min.js"></script>
-        <script src="js/aframe-ar.js"></script>
-    </head>
-    <body style='margin : 0px; overflow: hidden;'>
-        <a-scene embedded arjs='sourceType: webcam;'>
-            <a-entity
-                    rotation="-90 0 0"
-                    geometry="primitive: plane; width: 4; height: auto"
-                    material="color: blue"
-                    text="value: Bumi \n Menampilkan gambar bumi dasar"></a-entity><a-image src="images/earth-flat.jpg" rotation="-90 0 0"></a-image>
-            <a-marker-camera preset='hiro'></a-marker-camera>
-        </a-scene>
-        </body>
+  <head>
+    <script src="js/aframe.min.js"></script>
+    <script src="js/aframe-ar.js"></script>
+  </head>
+  <body style="margin: 0px; overflow: hidden">
+    <a-scene embedded arjs="sourceType: webcam;">
+      <a-entity
+        rotation="-90 0 0"
+        geometry="primitive: plane; width: 4; height: auto"
+        material="color: blue"
+        text="value: Bumi \n Menampilkan gambar bumi dasar"
+      ></a-entity
+      ><a-image src="images/earth-flat.jpg" rotation="-90 0 0"></a-image>
+      <a-marker-camera preset="hiro"></a-marker-camera>
+    </a-scene>
+  </body>
 </html>
-
-
