@@ -1,14 +1,14 @@
 /* css variables*/
 :root {
   --primary-color: #ef2d5e;
-  --primary-color-light: #ef2d5e;
+  --primary-color-light: #8e7474;
   --accent-color: #f2577e;
   --accent-color-light: #f9abbf;
   --accent-color-dark: #bf244b;
   --white-color: #fafbfc;
   --light-gray-color: #c6cbd1;
-  --medium-gray-color: #f9abbf;
-  --dark-gray-color: #ef2d5e;
+  --medium-gray-color: #959da5;
+  --dark-gray-color: #444d56;
   --bg-color: #f8f8fa;
   --code-bg-color: #f0e8e8;
 }
