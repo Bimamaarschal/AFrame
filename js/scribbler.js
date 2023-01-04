@@ -21,6 +21,7 @@ if (document.getElementsByClassName("demo").length > 0) {
   <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>
   </a-scene>  
             `;
+
   var speed = 60;
 
   function typeItOut() {
