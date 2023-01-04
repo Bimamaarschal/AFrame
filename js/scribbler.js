@@ -13,17 +13,14 @@ var getAll = function (selector, scope) {
 if (document.getElementsByClassName("demo").length > 0) {
   var i = 0;
   var txt = `
-  
-  <a-scene>
+       <a-scene>
   <a-box color="red" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
 
   <!-- Out of the box environment! -->
   <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>
   </a-scene>  
             
-  <!-- Hanya beberapa baris kode untuk menciptakan VR luar biasa -->
-  
-  `;
+  <!-- Hanya dengan beberapa baris kode untuk menciptakan VR luar biasa --> `;
 
   var speed = 60;
 

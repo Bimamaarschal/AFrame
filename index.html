@@ -44,49 +44,75 @@
       <aside class="doc__nav">
         <ul>
           <li class="js-btn selected">A-Frame</li>
-          <li class="js-btn">A-Frame Basic View</li>
-          <li class="js-btn">A-Frame 3D</li>
-          <li class="js-btn">A-Frame a-sphere 2D</li>
+          <li class="js-btn">AR.Js</li>
+          <li class="js-btn">A-Frame basic view</li>
+          <li class="js-btn">A-Frame a-sphere</li>
+          <li class="js-btn">A-Frame gltf-model</li>
           <li class="js-btn">Panorama 360°</li>
+          <li class="js-btn">Membuat Penanda</li>
           <li class="js-btn">Issues</li>
         </ul>
       </aside>
       <article class="doc__content">
+        <!-- A-Frame -->
         <section class="js-section">
           <h3 class="section__title">A-Frame</h3>
-
-          <div class="code__block code__block--notabs">
-            <pre class="code code--block">
-              <code class="shell-session demo"><br></code>
-            </pre>
-          </div>
-          <p align="justify">
+          <p>
             A-Frame adalah kerangka kerja web sumber terbuka yang di buat untuk
-            membangun pengalaman realitas virtual (VR). <br />A-Frame dikelola
-            oleh pengembang dari Supermedium (Diego Marcos, Kevin Ngo) dan
-            Google (Don McCurdy). <br />
-            Kerangka kerja A-Frame mengunakan sistem komponen entitas untuk
-            Three.js di mana pengembang dapat membuat adegan 3D dan WebVR
-            menggunakan HTML.<br />
-            Saat ini A-Frame masih terus berkembang untuk menjadi salah satu VR
-            terbesar dalam dunia pengembangan VR.
+            membangun pengalaman realitas virtual (VR). A-Frame dikelola oleh
+            pengembang dari Supermedium (Diego Marcos, Kevin Ngo) dan Google
+            (Don McCurdy). Kerangka kerja A-Frame mengunakan sistem komponen
+            entitas untuk Three.js di mana pengembang dapat membuat adegan 3D
+            dan WebVR menggunakan HTML. Saat ini A-Frame masih terus berkembang
+            untuk menjadi salah satu VR terbesar dalam dunia pengembangan VR.
             <br /><br />
             A-Frame mendukung sebagian besar headset VR seperti Vive, Rift,
             Windows Mixed Reality, Daydream, GearVR, Cardboard, Oculus Go, dan
-            bahkan dapat digunakan untuk augmented kenyataan.
+            bahkan dapat digunakan untuk augmented kenyataan. Referensi lengkap
+            terkait A-Frame anda dapat mengunjungi situs resmi A-Frame
+            <a href="https://aframe.io/" class="link link--dark" target="_blank"
+              >link.
+            </a>
+          </p>
+
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code class="shell-session demo"><br></code><br>
+            </pre>
+          </div>
+        </section>
+
+        <!-- AR.Js -->
+        <section class="js-section">
+          <h3 class="section__title">AR.Js</h3>
+          <p>
+            AR.js adalah pustaka Javascript pengembangan dari ARToolKit, salah
+            satu SDK AR pertama untuk seluler. AR.Js membuat perubahan pada
+            dunia reality berbasis Web, Pada dasarnya AR.Js bertujuan untuk
+            memberikan pustaka Javascript AR dengan program simulasi yang ringan
+            untuk di jalankan.
+            <br /><br />
+            Referensi lengkap terkait AR.Js anda dapat mengunjungi situs Github
+            org AR.Js
+            <a
+              href="https://github.com/AR-js-org"
+              class="link link--dark"
+              target="_blank"
+              >link.
+            </a>
           </p>
         </section>
-        <br /><br />
-        <section class="js-section">
-          <h3 class="section__title">A-Frame Basic View</h3>
-          <p>Tampilkan website</p>
-          <br />
-          <a href="bumi.html" class="button--primary" target="_blank"
-            >Tampilkan</a
-          >&nbsp;
-          <a href="page/bumi.zip" class="button--primary" download>Unduh Html</a
-          ><br />
-          <h3 class="section__title">Script</h3>
+
+        <!-- A-Frame Basic View -->
+        <section class="js-section" style="padding-bottom: 85px">
+          <h3 class="section__title">A-Frame basic view</h3>
+          <p>
+            Contoh project yang dibuat dengan A-Frame dan AR.Js basic, dengan
+            mejalankan HTML dan memberikan akses kamera, ketika preset yang di
+            tentukan terdeteksi maka program akan menampilkan gambar bumi text
+            standar.
+          </p>
+          <h3 class="section__title__script">Html</h3>
           <div class="code__block code__block--notabs">
             <pre class="code code--block">
               <code>
@@ -108,23 +134,65 @@
               </code>
             </pre>
           </div>
-        </section>
-        <br /><br />
-        <section class="js-section">
-          <h3 class="section__title">A-Frame 3D</h3>
-          <p>Tampilkan website</p>
           <br />
-          <a href="tam3d.html" class="button--primary" target="_blank"
-            >Tampilkan</a
+          <a href="bumi.html" class="button--primary" target="_blank"
+            >Jalankan</a
           >&nbsp;
-          <a href="page/tam3d.zip" class="button--primary" download
+          <a href="page/bumi.zip" class="button--primary" download
             >Unduh Html</a
-          ><br />
-          <h3 class="section__title">Script</h3>
+          >
+        </section>
+
+        <!-- A-Frame a-sphere 2D -->
+        <section class="js-section" style="padding-bottom: 85px">
+          <h3 class="section__title">A-Frame a-sphere</h3>
+          <p>
+            Contoh project yang dibuat dengan A-Frame dan AR.Js basic, dengan
+            mejalankan HTML dan memberikan akses kamera, ketika present yang di
+            tentukan terdeteksi maka program akan menampilkan linkaran berwarna
+            merah dengan mengikuti arah preset.
+          </p>
+          <h3 class="section__title__script">Html</h3>
           <div class="code__block code__block--notabs">
             <pre class="code code--block">
-                <code>
-                  &lt;body style=&quot;margin: 0px; overflow: hidden&quot;&gt;
+              <code>
+                &lt;body style=&quot;margin: 0px; overflow: hidden&quot;&gt;
+
+                  &lt;a-scene embedded arjs&gt;
+                    &lt;a-marker preset=&quot;hiro&quot;&gt;
+                      &lt;a-sphere position=&quot;0 0 0&quot; radius=&quot;0.6&quot; color=&quot;#EF2D5E&quot;&gt;&lt;/a-sphere&gt;
+                    &lt;/a-marker&gt;
+                    
+                    &lt;a-entity camera&gt;&lt;/a-entity&gt;
+                  &lt;/a-scene&gt;
+              
+                &lt;/body&gt;
+              </code>
+            </pre>
+          </div>
+          <br />
+          <a href="bola2d.html" class="button--primary" target="_blank"
+            >Jalankan</a
+          >&nbsp;
+          <a href="page/bola2d.zip" class="button--primary" download
+            >Unduh Html</a
+          >
+        </section>
+
+        <!-- A-Frame 3D -->
+        <section class="js-section" style="padding-bottom: 85px">
+          <h3 class="section__title">A-Frame gltf-model</h3>
+          <p>
+            Contoh project yang dibuat dengan A-Frame dan AR.Js basic, dengan
+            mejalankan HTML dan memberikan akses kamera, ketika preset yang di
+            tentukan terdeteksi maka program akan menampilkan gambar objek 3D
+            berupa mesjid.
+          </p>
+          <h3 class="section__title__script">Html</h3>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                &lt;body style=&quot;margin: 0px; overflow: hidden&quot;&gt;
                     &lt;a-scene embedded arjs=&quot;sourceType: webcam;&quot;&gt;
 
                       &lt;a-marker-camera preset=&quot;hiro&quot;&gt;
@@ -137,100 +205,110 @@
 
                     &lt;/a-scene&gt;
                   &lt;/body&gt;
-                </code>
-              </pre>
+              </code>
+            </pre>
           </div>
-        </section>
-        <br /><br />
-        <section class="js-section">
-          <h3 class="section__title">A-Frame a-sphere 2D</h3>
-          <p>Tampilkan website</p>
           <br />
-          <a href="bola2d.html" class="button--primary" target="_blank"
-            >Tampilkan</a
+          <a href="tam3d.html" class="button--primary" target="_blank"
+            >Jalankan</a
           >&nbsp;
-          <a href="page/bola2d.zip" class="button--primary" download
+          <a href="page/tam3d.zip" class="button--primary" download
             >Unduh Html</a
-          ><br />
-          <h3 class="section__title">Script</h3>
+          >
+        </section>
+
+        <!-- Panorama 360° -->
+        <section class="js-section" style="padding-bottom: 85px">
+          <h3 class="section__title">Panorama 360°</h3>
+          <p>
+            Contoh project yang dibuat dengan A-Frame VR, dengan mejalankan
+            HTML, maka akan menampilkan panorama yang dari gambar yang telah di
+            tentukan, panorama A-Frame mengikuti arah kordinat dari pengguna dan
+            menampilkan text lokasi.
+          </p>
+          <h3 class="section__title__script">Html</h3>
           <div class="code__block code__block--notabs">
             <pre class="code code--block">
-                <code>
-                  &lt;body style=&quot;margin: 0px; overflow: hidden&quot;&gt;
-
-                  &lt;a-scene embedded arjs&gt;
-                    &lt;a-marker preset=&quot;hiro&quot;&gt;
-                      &lt;a-sphere position=&quot;0 0 0&quot; radius=&quot;0.6&quot; color=&quot;#EF2D5E&quot;&gt;&lt;/a-sphere&gt;
-                    &lt;/a-marker&gt;
-                    
-                    &lt;a-entity camera&gt;&lt;/a-entity&gt;
-                  &lt;/a-scene&gt;
+              <code>
+                &lt;body&gt;
+                  &lt;a-scene&gt;
+                    &lt;a-sky src=&quot;images/panorama-1.jpeg&quot; rotation=&quot;0 -130 0&quot;&gt;&lt;/a-sky&gt;
               
+                    &lt;a-text
+                      font=&quot;arial&quot;
+                      value=&quot;Dari puncak bukit, 360&amp;deg; panorama&quot;
+                      width=&quot;6&quot;
+                      position=&quot;-2.5 0.25 -1.5&quot;
+                      rotation=&quot;0 15 0&quot;
+                    &gt;
+                    &lt;/a-text&gt;
+                    
+                  &lt;/a-scene&gt;
                 &lt;/body&gt;
-                </code>
-              </pre>
+              </code>
+            </pre>
           </div>
-        </section>
-        <br /><br />
-        <section class="js-section">
-          <h3 class="section__title">Panorama 360°</h3>
-          <p>Tampilkan website</p>
           <br />
           <a href="panorama.html" class="button--primary" target="_blank"
-            >Tampilkan</a
+            >Jalankan</a
           >&nbsp;
-          <a href="page/bola2d.zip" class="button--primary" download
+          <a href="page/panorama.zip" class="button--primary" download
             >Unduh Html</a
-          ><br />
-          <h3 class="section__title">Script</h3>
-          <div class="code__block code__block--notabs">
-            <pre class="code code--block">
-                <code>
-                  &lt;body style=&quot;margin: 0px; overflow: hidden&quot;&gt;
-
-                  &lt;a-scene embedded arjs&gt;
-                    &lt;a-marker preset=&quot;hiro&quot;&gt;
-                      &lt;a-sphere position=&quot;0 0 0&quot; radius=&quot;0.6&quot; color=&quot;#EF2D5E&quot;&gt;&lt;/a-sphere&gt;
-                    &lt;/a-marker&gt;
-                    
-                    &lt;a-entity camera&gt;&lt;/a-entity&gt;
-                  &lt;/a-scene&gt;
-              
-                &lt;/body&gt;
-                </code>
-              </pre>
-          </div>
+          >
         </section>
-        <br /><br />
+
+        <!-- Membuat Penanda -->
+        <section class="js-section">
+          <h3 class="section__title">Membuat Penanda</h3>
+          <p>
+            Setalah menjalankan A-Frame secara menyeluruh, pengembang akan
+            bertanya bagaimana cara pengembang membuat penanda sendiri yang
+            memungkinkan pengembang bereksperimen dengan penanda sendiri sesuai
+            kebutuhan aplikasi, oleh karena itu di butuhkan pembuatan penanda
+            yang akan di eksekusi menjadi gambar (jpg/png/jpeg) atau .patt
+            <br /><br />
+            Untuk dapat membuat penanda sendiri dari A-Frame dan AR.Js anda
+            dapat mengunjungi situs
+            <a
+              href="https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html"
+              class="link link--dark"
+              target="_blank"
+              >link.
+            </a>
+          </p>
+        </section>
+
         <section class="js-section">
           <h3 class="section__title">Issues</h3>
+          <h3 class="section__title__script">Issues 1</h3>
           <p>
-            Agar objek gambar dapat tampil, gunakan Present Hero dan Present
-            Kanji default dari A-Frame
+            Agar objek gambar dapat tampil, gunakan Preset Hero dan Preset Kanji
+            default dari A-Frame pada tabel berikut:
           </p>
           <table id="customers">
             <tr>
-              <th>Present</th>
+              <th>Preset</th>
               <th>Value</th>
               <th>Link</th>
             </tr>
             <tr>
               <td>Hiro</td>
               <td>
-                Present Hiro di buat default oleh A-Frame untuk menampilkan
-                objek hasil dari AR
+                Preset Hiro di buat default oleh A-Frame untuk menampilkan objek
+                hasil dari AR
               </td>
               <td><a href="page/hero.zip" download> Donwload </a></td>
             </tr>
             <tr>
               <td>Kanji</td>
               <td>
-                Present Kanji di buat default oleh A-Frame untuk menampilkan
+                Preset Kanji di buat default oleh A-Frame untuk menampilkan
                 objek hasil dari AR
               </td>
               <td><a href="page/kanji.zip" download> Donwload </a></td>
             </tr>
           </table>
+          <h3 class="section__title__script">Issues 2</h3>
           <p>
             Dokumentasi yang diawali karena tugas kuliah, diusahakan selalu
             update sesuai perkembangan A-Frame AR.Js <br />
