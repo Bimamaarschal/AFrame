@@ -20,7 +20,10 @@ if (document.getElementsByClassName("demo").length > 0) {
   <!-- Out of the box environment! -->
   <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>
   </a-scene>  
-            `;
+            
+  <!-- Hanya beberapa baris kode untuk menciptakan VR luar biasa -->
+  
+  `;
 
   var speed = 60;
 

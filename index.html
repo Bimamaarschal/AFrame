@@ -47,6 +47,7 @@
           <li class="js-btn">A-Frame Basic View</li>
           <li class="js-btn">A-Frame 3D</li>
           <li class="js-btn">A-Frame a-sphere 2D</li>
+          <li class="js-btn">Panorama 360°</li>
           <li class="js-btn">Issues</li>
         </ul>
       </aside>
@@ -59,7 +60,7 @@
               <code class="shell-session demo"><br></code>
             </pre>
           </div>
-          <p>
+          <p align="justify">
             A-Frame adalah kerangka kerja web sumber terbuka yang di buat untuk
             membangun pengalaman realitas virtual (VR). <br />A-Frame dikelola
             oleh pengembang dari Supermedium (Diego Marcos, Kevin Ngo) dan
@@ -146,6 +147,36 @@
           <p>Tampilkan website</p>
           <br />
           <a href="bola2d.html" class="button--primary" target="_blank"
+            >Tampilkan</a
+          >&nbsp;
+          <a href="page/bola2d.zip" class="button--primary" download
+            >Unduh Html</a
+          ><br />
+          <h3 class="section__title">Script</h3>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+                <code>
+                  &lt;body style=&quot;margin: 0px; overflow: hidden&quot;&gt;
+
+                  &lt;a-scene embedded arjs&gt;
+                    &lt;a-marker preset=&quot;hiro&quot;&gt;
+                      &lt;a-sphere position=&quot;0 0 0&quot; radius=&quot;0.6&quot; color=&quot;#EF2D5E&quot;&gt;&lt;/a-sphere&gt;
+                    &lt;/a-marker&gt;
+                    
+                    &lt;a-entity camera&gt;&lt;/a-entity&gt;
+                  &lt;/a-scene&gt;
+              
+                &lt;/body&gt;
+                </code>
+              </pre>
+          </div>
+        </section>
+        <br /><br />
+        <section class="js-section">
+          <h3 class="section__title">Penorama 360°</h3>
+          <p>Tampilkan website</p>
+          <br />
+          <a href="panorama.html" class="button--primary" target="_blank"
             >Tampilkan</a
           >&nbsp;
           <a href="page/bola2d.zip" class="button--primary" download
